@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:khaki;
+}
+.todo{
+    position: relative;
+    width: 350px;
+    min-height: 500px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: white;
+}
+/* .todo::before{
+    content: 'Previous';
+    position: absolute;
+    left: 5%;
+    bottom: 2%;
+    font-weight: bold;
+    padding: 5px 20px;
+    background-color: khaki;
+    border-radius: 5px;
+
+} */
+/* .todo::after{
+    content: 'Next';
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    font-weight: bold;
+    padding: 5px 20px;
+    background-color: khaki;
+    border-radius: 5px;
+
+} */
+.todo .date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo .date .day{
+    display: flex;
+}
+.todo .date .day .date-number{
+    font-size: 3rem;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.month-year{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.month{
+    font-size: 1.35rem;
+    /* margin-top: 10px; */
+    font-weight: bold;
+    align-self: center;
+}
+/* .year{
+    font-size: 1.5rem;
+} */
+/* .weeklist{
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+} */
+.week{
+    font-size: 1.25rem;
+    margin-inline: 20px;
+    font-weight: bold;
+    /* position: absolute;
+    top: 2%;
+    right: 5%; */
+}
+.listcontainer{
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.listcontainer ul  li{
+    list-style-type: none;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 25px;
+    user-select: none;
+    font-size: 18px;
+    margin-left: -30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gainsboro;
+    background-color: khaki;
+    padding: 10px;
+    position: relative;
+}
+/* .listcontainer li::after{
+    content: 'X';
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+} */
+
+li span{
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('./images/unchecked.png');
+    background-position: center;
+    background-size: cover;
+    top: 5px;
+    left: 5px;
+} */
+/* li.checked{
+    color: gray;
+    text-decoration: line-through;
+} */
+/* li.checked::before{
+    background-image: url('./images/checked.png');
+} */
+
+/* ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('./images/unchecked.png');
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+} */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    background-color: gainsboro;
+    box-shadow:  -5px -5px 10px white,
+                 5px 5px 10px gray,
+                 inset -5px -5px 10px white,
+                 inset 5px 5px 10px gray;
+}
+/* ul li.checked::before{
+    background-image: url('./images/checked.png');
+} */
+
+.listcontainer ul li img{
+    width: 25px;
+    position: absolute;
+    right: 30px;
+}
+input{
+    width: 100%;
+    padding: 10px 15px;
+}
+.addbtn{
+    position: absolute;
+    bottom: 0;  
+}
+.btn{
+    background-color: limegreen;
+    position: absolute;
+    bottom: -30px;
+    left: 100px;
+    border: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+.habit-btn{
+    /* width: 50px;
+    height: 50px; */
+    position: absolute;
+    bottom:2%;
+    right: 40px;
+    background-color: khaki;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.toggle{
+    border: 3px solid red;
+    background-color: tomato;
+}
